@@ -1,0 +1,367 @@
+:root{
+    --color-text: #242424;
+    --color-naranjahab:#EE6802;
+    --color-naranjain:#FF9B21;
+    --bcolor: #F9FAD1;
+    --color-gris:#AAC3BD;
+    --color-título: #FFDF37;
+    --fontsite: "sans-serif"
+
+}
+html{
+    font-family: 'Encode Sans', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: var(--bcolor);
+    height: 100vh;
+    position: relative;
+
+  }
+  header{
+    width:100%;
+    height: 128px;
+}
+ .headerdiv{
+    display: flex;
+    justify-content: center;
+  }
+ nav a{
+    text-decoration: none;
+
+  }
+  
+  h2{
+    color: var(--color-naranjahab)
+  }
+
+  nav a{
+    text-decoration: none;
+    color: var(--color-text);
+
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contenido{
+    width:100%;
+  }
+  .contenidobuscador{
+    width:80%;
+    margin:auto;
+    position:relative;
+ }
+  .imagen{
+    height:232px;
+    width: 325;
+    margin: auto;
+    background-image: url("./Assets/iPhone\ mockup1.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+ .buscador{
+    width:100%;
+ }
+  .buscador input{
+    border: 1px solid var(--color-naranjahab);
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 100%;
+    height: 48px;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  .buscador input::placeholder{
+    font-size: 16px;
+}
+    .tache{
+    position: absolute;
+    right: 55px;
+    top: 16px;
+  }
+
+  .linea{
+    position: absolute;
+    right: 44px;
+    top: 16px;
+  }
+  .lupa{
+    position: absolute;
+    right: 16px;
+    top:16px;
+  }
+  
+  .texto{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: var(--color-text)
+  }
+
+  .cambiocolor{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: var(--color-naranjahab)
+  }
+
+  .texto p{
+    font-weight: 300;
+  }
+  .check{
+    display: flex;
+    justify-content: flex-start;
+    width: 51%;
+  }
+  .check img{
+    width: 16px;
+    margin-right: 8px;
+  }
+
+  .check p{
+    font-weight: 800;
+  }
+  .checks{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  button{
+    height:60px;
+    width: 168px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--color-naranjain);
+    color: #ffff;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 15px 10px -9px #b5afaf;
+  }
+ .rating {
+    display: flex;
+    justify-content: center;
+ }
+ .rating img {
+    width: 8%;
+ }
+ .rating p{
+    font-weight: 500;
+    margin-left: 5px;
+  }
+.rated{
+      color: var(--color-naranjahab);
+ }
+ footer{
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+ }
+ footer p{
+    color: var(--color-gris)
+ }
+
+ @media screen and (min-width:320px){
+    
+    .check{
+        display: flex;
+        justify-content: center;
+        width: 32%;
+        align-items: center;
+      }
+    .check img{
+        width: 16px;
+        margin-right: 8px;
+      }
+    
+    .check p{
+        font-weight: 800;
+      }
+    .checks{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    .texto{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        color: var(--color-text)
+      }
+    .texto p{
+        font-weight: 300;
+      }
+
+    .rating img {
+      width: 2%;
+    }
+    
+    footer{
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+      }
+    footer p{
+        color: var(--color-gris)
+     }
+    
+}
+
+@media screen and (min-width:1024px){
+
+
+header{
+    width: 85%;
+    height: 128px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+   }
+
+   nav{
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+   }
+
+   nav a{
+    text-decoration: none;
+    margin: 0 10px;
+   }
+
+   main{
+    width: 85%;
+    margin:auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    /*margin: 0 10px 0 0;*/
+    align-items: center;
+   }
+
+   .imagen{
+    height:444px;
+    width: 623px;
+    top: 179px;
+    left:761px;
+    background-image: url("./Assets/iPhone\ mockup1.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+} 
+
+
+   .buscador{
+    width: 100%;
+    background-position: left;
+    height: 48px;
+    left: 121px;
+    top: 187px;
+    float: top;
+ }
+ 
+  .buscador input{
+    border: 1px solid var(--color-naranjahab);
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 100%;
+    height: 48px;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  .contenidobuscador{
+    width: 100%;
+  }
+  .buscador input::placeholder{
+    font-size: 16px;
+}
+    .tache{
+    position: absolute;
+    right: 55px;
+    top: 16px;
+    display: none;
+  }
+
+  .linea{
+    position: absolute;
+    right: 44px;
+    top: 16px;
+    display: none;
+  }
+  .lupa{
+    position: absolute;
+    right: 16px;
+    top:16px;
+  }
+
+.texto{
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    color: var(--color-text)
+  }
+  .texto p{
+    font-weight: 300;
+ }
+
+ .cambiocolor{
+  width: 80%;
+  margin: initial;
+  text-align: left;
+  color: var(--color-naranjahab)
+}
+.checks{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    }
+.check{
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      width: 25%;
+      }
+.dos{
+  margin-right: 16px;
+        }    
+
+.rating {
+    display: flex;
+    justify-content: left;
+    margin-left: 32px;
+    width: 40%;
+    align-items: center;
+ }
+ .rating img {
+    width: 6%;
+ }
+ .rating p{
+    font-weight: 500;
+    margin-left: 5px;
+}
+.botonrated{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+footer{
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+    
+     }
+     footer p{
+        color: var(--color-gris)
+     }
+
+  }
